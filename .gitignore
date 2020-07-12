@@ -4,11 +4,14 @@
 # Log file
 *.log
 
-# BlueJ files
-*.ctxt
+# IntelliJ and Maven subdirectories
+.idea
+.mvn
+*.iml
+mvnw
+mvnw.cmd
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+target
 
 # Package Files #
 *.jar

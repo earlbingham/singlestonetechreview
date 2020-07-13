@@ -1,0 +1,21 @@
+{
+    "name": {
+        "first": "Zackery",
+        "middle": "Francis",
+        "last": "Smith"
+    },
+    "address": {
+        "street": "8360 High Autumn Road",
+        "city": "Cannon",
+        "state": "Delaware",
+        "zip": "19797"
+    },
+    "phoneNumbers": [
+        { "number": "555-555-5555",
+            "type": "work"
+        },
+        { "number": "888-888-8888",
+        "type": "mobile" }
+    ],
+    "email": "test@yahoo.com"
+}

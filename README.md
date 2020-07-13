@@ -9,7 +9,7 @@
     4. Tomcat - Web server to support HTTP communication to REST service calls
     5. Curl - command line tool for testing REST APIs
  
-   
+
 #### Installation and Build Instructions
 ```sh
 Requires following installed
@@ -40,15 +40,15 @@ http://localhost:8081
 
 # Curl Test scripts 
 
-getContactEntries.sh - curl command to call GET /contacts List all contacts
+tests/getContactEntries.sh - curl command to call GET /contacts List all contacts
 
-postContactEntry.sh - curl command to call POST /contacts Create a new contact
+tests/postContactEntry.sh - curl command to call POST /contacts Create a new contact
 
-putContactEntry.sh - curl command to call PUT /contacts/{id} Update a contact
+tests/putContactEntry.sh - curl command to call PUT /contacts/{id} Update a contact
 
-getSpecificContactEntry.sh - curl command to call GET /contacts/{id} Get a specific contact
+tests/getSpecificContactEntry.sh - curl command to call GET /contacts/{id} Get a specific contact
 
-deleteContactEntry.sh - curl command to call DELETE /contacts/{id} Delete a contact
+tests/deleteContactEntry.sh - curl command to call DELETE /contacts/{id} Delete a contact
 
 
 # JSON files used for loading to server

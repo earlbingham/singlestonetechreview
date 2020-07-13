@@ -72,7 +72,6 @@ public class ContactController {
                                                       @RequestBody Contact contactDetails) throws ResourceNotFoundException {
         Contact contact = contactRepository.findById(contactId)
                 .orElseThrow(() -> new ResourceNotFoundException("Contact not found for this id :: " + contactId));
-
         Set<Phone> phones = contact.getPhoneNumbers();
         Set<Phone> phones2 = new HashSet<>();
         for(Phone phone : phones) {
@@ -91,11 +90,9 @@ public class ContactController {
             throws ResourceNotFoundException {
         Contact contact = contactRepository.findById(contactId)
                 .orElseThrow(() -> new ResourceNotFoundException("Contact not found for this id :: " + contactId));
-
         contactRepository.delete(contact);
         Map<String,Boolean> response = new HashMap<>();
         return "{ \"status\": \"Deleted contact id: " + contactId + "\" }";
-
     }
 
 }

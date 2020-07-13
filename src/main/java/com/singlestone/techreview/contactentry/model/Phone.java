@@ -20,7 +20,6 @@ public class Phone {
     @JoinColumn(name = "contact_id", nullable = false)
     private Contact contact;
 
-    // Default constructor
     public Phone() { }
 
     public Phone(Contact c) {

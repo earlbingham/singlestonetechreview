@@ -1,6 +1,5 @@
 package com.singlestone.techreview.contactentry.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 

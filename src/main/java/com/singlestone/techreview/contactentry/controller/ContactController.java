@@ -1,12 +1,10 @@
 package com.singlestone.techreview.contactentry.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.singlestone.techreview.contactentry.exception.ResourceNotFoundException;
 import com.singlestone.techreview.contactentry.model.Contact;
 import com.singlestone.techreview.contactentry.model.Phone;
 import com.singlestone.techreview.contactentry.repository.ContactRepository;
-import com.singlestone.techreview.contactentry.repository.PhoneNumberRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +19,6 @@ public class ContactController {
 
     @Autowired
     private ContactRepository contactRepository;
-
-    @Autowired
-    private PhoneNumberRepository phoneNumberRepository;
 
     @GetMapping("/contacts")
     public String getAllContacts() throws JsonProcessingException {
